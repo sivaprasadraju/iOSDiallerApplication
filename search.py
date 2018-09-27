@@ -14,11 +14,8 @@ def Search(Input, Data, AlphabetDict):
                 combinations.append(item)
             else:
                 combine(terms[1:], item)
-
-
-
+				
     UserInput = list(str(Input))
-
     UserInputString = str(Input)
 
     for i in range(len(UserInput)):
