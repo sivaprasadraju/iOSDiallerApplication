@@ -16,3 +16,6 @@ class TestMain(TestCase):
 	def TestCaseForLastName(self):
         self.assertEqual(Search(7258, Data={'siva raju': 9542199855, 'prasad bairaju': 9490738146}, AlphabetDict={2: ['a', 'b', 'c'], 5: ['j', 'k', 'l'], 7: ['p', 'q', 'r', 's'], 8: ['t', 'u', 'v']}), 'siva raju')
 
+	def TestCaseForFirstHalfOfNumber(self):
+        self.assertEqual(Search(95421, Data={'siva raju': 9542199855, 'prasad bairaju': 9490738146}, AlphabetDict={2: ['a', 'b', 'c'], 5: ['j', 'k', 'l'], 7: ['p', 'q', 'r', 's'], 8: ['t', 'u', 'v']}), 'siva raju')
+
