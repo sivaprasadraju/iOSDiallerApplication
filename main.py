@@ -1,4 +1,5 @@
 from add import AddContact
+from search import Search
 
 
 class Main:
