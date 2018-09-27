@@ -9,3 +9,7 @@ class TestMain(TestCase):
 	
 	def TestCaseForAddFunction(self):
         self.assertEqual(AddContact('siva',9542199855,Data={'prasad':9182961266, 'raju':9490738146}),3)
+		
+	def TestCaseForFirstName(self):
+        self.assertEqual(Search(7482, Data={'siva raju': 9542199855, 'prasad bairaju': 9490738146}, AlphabetDict={2: ['a', 'b', 'c'], 4: ['g', 'h', 'i'], 7: ['p', 'q', 'r', 's'], 8: ['t', 'u', 'v']}), 'siva raju')
+
